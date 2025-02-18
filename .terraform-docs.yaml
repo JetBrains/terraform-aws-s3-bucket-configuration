@@ -1,0 +1,76 @@
+formatter: "markdown table"
+
+version: ""
+
+header-from: main.tf
+footer-from: ""
+
+sections:
+  hide: []
+  show: []
+
+content: |-
+  # terraform-aws-s3-bucket-configuration
+  
+  [![official JetBrains project](https://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+  
+  // TODO: Add an introduction here.
+
+  ## Compatibility
+
+  The minimum supported Terraform version is: 1.3.0.
+  
+  ## Features
+  
+  // TODO: Describe the core features of this Module.
+  
+  ## Repository organization
+  
+  * [examples](./examples): this folder contains ready to use examples that show how to use this Module;
+  
+  * [tests](./test): this folder contains a list of automated tests for this Module and examples;
+  
+  * [lib](./lib): this folder contains a list of local utilities, mostly Makefiles, to support the
+    contributor's maintenance effort of this Module;
+  
+  * [modules](./modules): this folder contains a list of local Terraform modules that the Root Module uses;
+  
+  * [.github](./.github): this folder contains a list of GitHub workflows to support contributions
+    during change requests and releases of this Module.
+  
+  ## Contribution guides
+  
+  Refer to this [page](./CONTRIBUTING.md) for details in regard to contribution instructions.
+  
+  {{ .Requirements }}
+  {{ .Providers }}
+  {{ .Resources }}
+  {{ .Inputs }}
+  {{ .Outputs }}
+
+output:
+  file: "README.md"
+  mode: replace
+
+output-values:
+  enabled: false
+  from: ""
+
+sort:
+  enabled: true
+  by: name
+
+settings:
+  anchor: true
+  color: true
+  default: true
+  description: false
+  escape: true
+  hide-empty: false
+  html: true
+  indent: 2
+  lockfile: true
+  read-comments: true
+  required: true
+  sensitive: true
+  type: true
